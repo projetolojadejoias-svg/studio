@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'russo-gold-legacy-68453.lovable.app',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };
