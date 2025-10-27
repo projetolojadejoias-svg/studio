@@ -13,15 +13,15 @@ export function Hero() {
         style={{ backgroundAttachment: 'fixed' }}
         priority
       />
-      <div className="absolute inset-0 bg-white/30"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 text-center px-6">
-        <p className="text-base font-light tracking-widest uppercase mb-4 animate-fade-in [animation-delay:'200ms'] text-gray-500">
+        <p className="text-base font-light tracking-widest uppercase mb-4 animate-fade-in [animation-delay:'200ms'] text-muted-foreground">
           Coleção Exclusiva 2025
         </p>
-        <h1 className="text-6xl md:text-8xl font-serif-display font-semibold mb-6 animate-fade-in [animation-delay:'400ms'] text-black">
+        <h1 className="text-6xl md:text-8xl font-serif-display font-semibold mb-6 animate-fade-in [animation-delay:'400ms'] text-foreground">
           Russo Store
         </h1>
-        <p className="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:'600ms'] text-gray-700">
+        <p className="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:'600ms'] text-muted-foreground">
           Joias e Relógios de Primeira Linha. Autenticidade verificada e elegância atemporal.
         </p>
         <Link href="#trending-products">

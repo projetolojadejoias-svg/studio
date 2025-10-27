@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="bg-white text-gray-800">
+      <main>
         <Hero />
         <div id="trending-products">
           <TrendingProducts />

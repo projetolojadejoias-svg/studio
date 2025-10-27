@@ -17,7 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const productImage = PlaceHolderImages.find(img => img.id === product.image);
 
   return (
-    <Card className="group bg-white border-border hover:border-primary/50 transition-luxury overflow-hidden shadow-card hover:shadow-luxury">
+    <Card className="group bg-background/80 border-border hover:border-primary/50 transition-luxury overflow-hidden shadow-card hover:shadow-luxury">
       <div className="relative overflow-hidden">
         {productImage && (
           <Image
@@ -30,10 +30,10 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         )}
         <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-luxury flex items-center justify-center gap-3">
-          <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white">
+          <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black">
             <Eye className="h-4 w-4" />
           </Button>
-          <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white">
+          <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black">
             <Heart className="h-4 w-4" />
           </Button>
           <Button asChild size="icon">
@@ -53,8 +53,8 @@ export function ProductCard({ product }: ProductCardProps) {
       </div>
       <CardContent className="p-4 space-y-3">
         <div>
-          <h3 className="font-semibold text-gray-900 group-hover:text-primary transition-luxury">{product.name}</h3>
-          <p className="text-sm text-gray-500">{product.description}</p>
+          <h3 className="font-semibold text-foreground group-hover:text-primary transition-luxury">{product.name}</h3>
+          <p className="text-sm text-muted-foreground">{product.description}</p>
         </div>
         <div className="flex items-center justify-between">
           <div>
