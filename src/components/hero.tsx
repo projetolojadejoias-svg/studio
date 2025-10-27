@@ -35,7 +35,7 @@ export function Hero() {
         <Link href="#trending-products">
             <Button
               size="lg"
-              className="bg-[#C5A65D] text-black hover:bg-[#b4964f] transition-all duration-300 animate-fade-in [animation-delay:'800ms'] shadow-lg text-lg h-12 px-10"
+              className="bg-[#FFD700] text-black hover:bg-[#FFD700]/90 transition-all duration-300 animate-fade-in [animation-delay:'800ms'] shadow-lg text-lg h-12 px-10"
             >
               Ver Coleção
             </Button>
