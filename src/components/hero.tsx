@@ -1,9 +1,19 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+      <Image
+        src="https://i.imgur.com/7iJiYpl.png"
+        alt="Fundo de joias douradas"
+        fill
+        className="object-cover"
+        style={{ backgroundAttachment: 'fixed' }}
+        priority
+      />
+      <div className="absolute inset-0 bg-white/30"></div>
       <div className="relative z-10 text-center px-6">
         <p className="text-base font-light tracking-widest uppercase mb-4 animate-fade-in [animation-delay:'200ms'] text-gray-500">
           Coleção Exclusiva 2025
