@@ -38,34 +38,34 @@ const features = [
 
 export function Confidence() {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-luxury-lg text-foreground font-headline mb-4">COMPRA COM <span className="text-primary">CONFIANÇA</span></h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-luxury-lg text-black font-headline mb-4">COMPRA COM <span className="text-primary">CONFIANÇA</span></h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Entrega segura, autenticidade garantida e suporte especializado. Sua tranquilidade é nossa prioridade máxima.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {features.map((feature, index) => (
-            <Card key={index} className="bg-card-gradient border-border hover:border-primary/30 transition-luxury p-6 text-center group shadow-card hover:shadow-luxury">
+            <Card key={index} className="bg-white border-border hover:border-primary/30 transition-luxury p-6 text-center group shadow-card hover:shadow-luxury">
               <CardHeader className="p-0 mb-4 flex justify-center">
                 <div className="p-3 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-luxury inline-block">
                   {feature.icon}
                 </div>
               </CardHeader>
               <CardContent className="p-0">
-                <CardTitle className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-luxury">{feature.title}</CardTitle>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                <CardTitle className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-primary transition-luxury">{feature.title}</CardTitle>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="bg-card-gradient border border-border rounded-2xl p-8 text-center shadow-luxury">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Ainda tem dúvidas sobre a autenticidade?</h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+        <div className="bg-white border border-border rounded-2xl p-8 text-center shadow-luxury">
+          <h3 className="text-2xl font-bold text-black mb-4">Ainda tem dúvidas sobre a autenticidade?</h3>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Fale com nossos especialistas para avaliação ao vivo via WhatsApp ou videochamada. Verificação completa antes da sua decisão de compra.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,33 +5,33 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border">
+    <footer className="bg-gray-50 border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="text-3xl font-headline font-black text-primary">RS</div>
-              <span className="text-lg font-body font-bold text-foreground">RUSSO STORE</span>
+              <span className="text-lg font-body font-bold text-gray-900">RUSSO STORE</span>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-gray-600 leading-relaxed">
               Joias e relógios de primeira linha com autenticidade verificada, entrega segura e garantia total.
             </p>
             <div className="flex space-x-3">
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
+              <Button variant="ghost" size="icon" className="text-gray-500 hover:text-primary">
                 <Instagram className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
+              <Button variant="ghost" size="icon" className="text-gray-500 hover:text-primary">
                 <MessageCircle className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
+              <Button variant="ghost" size="icon" className="text-gray-500 hover:text-primary">
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Produtos</h3>
-            <ul className="space-y-2 text-muted-foreground">
+            <h3 className="text-lg font-semibold text-gray-900">Produtos</h3>
+            <ul className="space-y-2 text-gray-600">
               <li><Link href="#" className="hover:text-primary transition-luxury">Relógios de Luxo</Link></li>
               <li><Link href="#" className="hover:text-primary transition-luxury">Correntes de Ouro</Link></li>
               <li><Link href="#" className="hover:text-primary transition-luxury">Pulseiras Premium</Link></li>
@@ -42,8 +42,8 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Suporte</h3>
-            <ul className="space-y-2 text-muted-foreground">
+            <h3 className="text-lg font-semibold text-gray-900">Suporte</h3>
+            <ul className="space-y-2 text-gray-600">
               <li><Link href="#" className="hover:text-primary transition-luxury">Central de Ajuda</Link></li>
               <li><Link href="#" className="hover:text-primary transition-luxury">Política de Garantia</Link></li>
               <li><Link href="#" className="hover:text-primary transition-luxury">Política de Devolução</Link></li>
@@ -54,14 +54,14 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Contato</h3>
+            <h3 className="text-lg font-semibold text-gray-900">Contato</h3>
             <div className="space-y-3">
               <Button asChild variant="outline" className="w-full justify-start border-success text-success hover:bg-success hover:text-success-foreground">
                 <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank">
                   <MessageCircle className="h-4 w-4 mr-2" />WhatsApp
                 </Link>
               </Button>
-              <div className="text-sm text-muted-foreground space-y-1">
+              <div className="text-sm text-gray-600 space-y-1">
                 <p>Atendimento 24/7</p>
                 <p>Especialistas certificados</p>
                 <p>Avaliação ao vivo</p>
@@ -74,8 +74,8 @@ export function Footer() {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Payment Methods */}
             <div className="flex-1">
-              <h2 className="text-lg font-semibold text-foreground mb-4">Formas de Pagamento</h2>
-              <div className="bg-card p-4 rounded-lg border border-border">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Formas de Pagamento</h2>
+              <div className="bg-white p-4 rounded-lg border border-border">
                 <div className="mb-4">
                   <Image src="https://cdn.sistemawbuy.com.br/img/bt-pgto-mercadopago.png" alt="Pague com Mercado Pago" width={120} height={30} className="h-auto" />
                 </div>
@@ -94,8 +94,8 @@ export function Footer() {
 
             {/* Security Seals */}
             <div className="flex-1">
-              <h2 className="text-lg font-semibold text-foreground mb-4">Segurança</h2>
-              <div className="bg-card p-4 rounded-lg border border-border h-full flex items-center">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Segurança</h2>
+              <div className="bg-white p-4 rounded-lg border border-border h-full flex items-center">
                 <div className="flex items-center gap-4">
                   <Link href="https://www.google.com/safebrowsing/diagnostic?site=www.nacarpratas.com.br" rel="noopener noreferrer" target="_blank" title="Google Safe Browsing" className="transition-transform hover:scale-105">
                     <Image src="https://cdn.sistemawbuy.com.br/img/selos/google.png" alt="Google Safe Browsing" width={100} height={38} />
@@ -106,7 +106,7 @@ export function Footer() {
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"></path></svg>
                       <span>4.9</span>
                     </div>
-                    <p className="text-xs text-muted-foreground m-0">8283 avaliações</p>
+                    <p className="text-xs text-gray-600 m-0">8283 avaliações</p>
                   </Link>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="py-6 border-t border-border text-center text-sm text-muted-foreground">
+        <div className="py-6 border-t border-border text-center text-sm text-gray-600">
           <p>© 2024 Russo Store. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
           <div className="mt-2 space-x-4">
             <Link href="#" className="hover:text-primary transition-luxury">Termos de Uso</Link>
