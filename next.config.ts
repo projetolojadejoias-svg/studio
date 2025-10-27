@@ -33,7 +33,13 @@ const nextConfig: NextConfig = {
         hostname: 'russo-gold-legacy-68453.lovable.app',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sistemawbuy.com.br',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   devServer: {
