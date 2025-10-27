@@ -83,14 +83,17 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl lg:text-3xl font-serif-display font-semibold tracking-tight text-white absolute left-1/2 -translate-x-1/2 flex items-center justify-center"
+            className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center"
+            aria-label="Russo Store - Joias, Relógios e Acessórios"
           >
             <Image
               src="https://i.imgur.com/dOQhqsY.png"
               alt="Russo Store Logo"
-              width={160}
-              height={56}
-              className="h-10 md:h-12 lg:h-14 w-auto object-contain select-none"
+              width={200}
+              height={80}
+              className="h-16 w-auto md:h-20 lg:h-24 object-contain transition-all duration-300 ease-in-out hover:scale-105"
+              loading="lazy"
+              decoding="async"
             />
           </Link>
 
