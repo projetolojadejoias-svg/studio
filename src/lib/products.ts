@@ -41,6 +41,7 @@ export const products: Product[] = [
     price: '169,99',
     image: 'prod-3',
     tags: [],
+    discount: 20,
   },
   {
     id: '4',
@@ -60,6 +61,7 @@ export const products: Product[] = [
     tags: [
       { text: '2 restantes', variant: 'destructive' },
     ],
+    discount: 15,
   },
   {
     id: '6',
@@ -68,6 +70,7 @@ export const products: Product[] = [
     price: '159,99',
     image: 'prod-6',
     tags: [],
+    discount: 5,
   },
   {
     id: '7',
@@ -87,6 +90,7 @@ export const products: Product[] = [
     tags: [
       { text: '3 restantes', variant: 'destructive' },
     ],
+    discount: 25,
   },
     {
     id: '9',
@@ -96,6 +100,7 @@ export const products: Product[] = [
     image: 'prod-9',
     tags: [
     ],
+    discount: 10,
   },
   {
     id: '10',
@@ -106,6 +111,7 @@ export const products: Product[] = [
     tags: [
       { text: '2 restantes', variant: 'destructive' },
     ],
+    discount: 12,
   },
   {
     id: '11',
@@ -115,6 +121,7 @@ export const products: Product[] = [
     image: 'prod-11',
     tags: [
     ],
+    discount: 18,
   },
   {
     id: '12',
@@ -125,6 +132,7 @@ export const products: Product[] = [
     tags: [
       { text: '3 restantes', variant: 'destructive' },
     ],
+    discount: 22,
   },
   {
     id: '13',
@@ -134,6 +142,7 @@ export const products: Product[] = [
     image: 'prod-13',
     tags: [
     ],
+    discount: 10,
   },
   {
     id: '14',
@@ -144,5 +153,6 @@ export const products: Product[] = [
     tags: [
       { text: '1 restante', variant: 'destructive' },
     ],
+    discount: 15,
   },
 ];
