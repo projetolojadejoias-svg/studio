@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetFooter } from "@/components/ui/sheet";
-import { Search, User, ShoppingBag, Menu, Heart, X, ChevronDown, Instagram, Facebook, MessageCircle, Truck } from "lucide-react";
+import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, Facebook, MessageCircle, Truck } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { products } from "@/lib/products";
@@ -83,9 +83,15 @@ export function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl lg:text-3xl font-serif-display font-semibold tracking-tight text-white absolute left-1/2 -translate-x-1/2"
+            className="text-2xl lg:text-3xl font-serif-display font-semibold tracking-tight text-white absolute left-1/2 -translate-x-1/2 flex items-center justify-center"
           >
-            Russo Store
+            <Image
+              src="https://i.imgur.com/dOQhqsY.png"
+              alt="Russo Store Logo"
+              width={160}
+              height={56}
+              className="h-10 md:h-12 lg:h-14 w-auto object-contain select-none"
+            />
           </Link>
 
           {/* Icons */}
