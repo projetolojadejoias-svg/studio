@@ -10,7 +10,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <TrendingProducts />
+        <div id="trending-products">
+          <TrendingProducts />
+        </div>
         <Confidence />
       </main>
       <Footer />
