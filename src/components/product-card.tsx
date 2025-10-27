@@ -46,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </Button>
         </div>
         <div className="absolute top-3 right-3 flex flex-col gap-2">
-          {product.tags.map((tag, index) => (
+          {product.tags.filter(tag => tag.text !== 'Certificado').map((tag, index) => (
             <Badge key={index} variant={tag.variant} className="flex items-center gap-1">
               {tag.variant === "success" && <Shield className="h-3 w-3" />}
               {tag.text}
