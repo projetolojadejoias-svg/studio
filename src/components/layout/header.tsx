@@ -84,12 +84,12 @@ export function Header() {
           <a
             href="/"
             className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-50"
-            aria-label="Russo Store - Joias, Relógios e Acessórios"
+            aria-label="Russo Store"
           >
             <img
               src="https://i.imgur.com/dOQhqsY.png"
               alt="Russo Store Logo"
-              className="logo-russo-store transition-all duration-500 ease-in-out hover:scale-105"
+              className="logo-russo-store"
               loading="lazy"
               decoding="async"
             />
