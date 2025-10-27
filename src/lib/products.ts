@@ -129,4 +129,25 @@ export const products: Product[] = [
       { text: '3 restantes', variant: 'destructive' },
     ],
   },
+  {
+    id: '13',
+    name: 'Corrente Ferradura com Cavalo',
+    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
+    price: '229,99',
+    image: 'prod-13',
+    tags: [
+      { text: 'Certificado', variant: 'success' },
+    ],
+  },
+  {
+    id: '14',
+    name: 'Corrente Ferradura Premium',
+    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
+    price: '249,99',
+    image: 'prod-14',
+    tags: [
+      { text: 'Certificado', variant: 'success' },
+      { text: '1 restante', variant: 'destructive' },
+    ],
+  },
 ];

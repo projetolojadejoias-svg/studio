@@ -9,74 +9,86 @@
     {
       "id": "prod-1",
       "description": "Corrente com Pingente Emblema Real",
-      "imageUrl": "https://images.unsplash.com/photo-1615920887486-dc0c3a035405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z29sZCUyMGNoYWlufGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold chain"
+      "imageUrl": "https://images.unsplash.com/photo-1753723888617-33dd21f89b32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb3lhbCUyMGVtYmxlbSUyMG5lY2tsYWNlfGVufDB8fHx8MTc2MTU3OTY1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "royal emblem necklace"
     },
     {
       "id": "prod-2",
       "description": "Corrente com Escudo Brasão",
-      "imageUrl": "https://images.unsplash.com/photo-1610918122969-b6cbbc2bdc08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnb2xkJTIwcGVuZGFudHxlbnwwfHx8fDE3NjE1MTEwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold pendant"
+      "imageUrl": "https://images.unsplash.com/photo-1682364853107-9b87abbc0269?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGllbGQlMjBwZW5kYW50JTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shield pendant necklace"
     },
     {
       "id": "prod-3",
       "description": "Corrente com Cruz Clássica",
-      "imageUrl": "https://images.unsplash.com/photo-1593274655509-c76df95c10a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjcm9zcyUyMG5lY2tsYWNlfGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cross necklace"
+      "imageUrl": "https://images.unsplash.com/photo-1643940527751-c28c9c183ddb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbGFzc2ljJTIwY3Jvc3MlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classic cross necklace"
     },
     {
       "id": "prod-4",
       "description": "Corrente com Estrela de Davi",
-      "imageUrl": "https://images.unsplash.com/photo-1725033796879-f8c3a3309c0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGFyJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTI4OTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "star necklace"
+      "imageUrl": "https://images.unsplash.com/photo-1758995115518-26f90aa61b97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGFyJTIwZGF2aWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "star david necklace"
     },
     {
       "id": "prod-5",
       "description": "Corrente com Emblema de Ouro",
-      "imageUrl": "https://images.unsplash.com/photo-1557775209-af7bbe9121df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xkJTIwZW1ibGVtfGVufDB8fHx8MTc2MTUyODk4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold emblem"
+      "imageUrl": "https://images.unsplash.com/photo-1708221382764-299d9e3ad257?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnb2xkJTIwZW1ibGVtJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gold emblem necklace"
     },
     {
       "id": "prod-6",
       "description": "Corrente com Ferradura",
-      "imageUrl": "https://images.unsplash.com/photo-1719568684590-b07f062f2f66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3JzZXNob2UlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Mjg5ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708221382764-299d9e3ad257?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob3JzZXNob2UlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Mjg5ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "horseshoe necklace"
     },
     {
       "id": "prod-7",
       "description": "Corrente Estrela de Davi Delicada",
-      "imageUrl": "https://images.unsplash.com/photo-1678146313001-0aeeadd3d755?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZWxpY2F0ZSUyMG5lY2tsYWNlfGVufDB8fHx8MTc2MTQ2MTgyMnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "delicate necklace"
+      "imageUrl": "https://images.unsplash.com/photo-1609942821011-bdfe750c8862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVsaWNhdGUlMjBzdGFyJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "delicate star necklace"
     },
     {
       "id": "prod-8",
       "description": "Corrente Cruz Ouro 18k",
-      "imageUrl": "https://images.unsplash.com/photo-1506955528982-3997f7841055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xkJTIwY3Jvc3N8ZW58MHx8fHwxNzYxNTI4OTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gold cross"
+      "imageUrl": "https://images.unsplash.com/photo-1584771305146-48469d93ddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxnb2xkJTIwY3Jvc3MlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gold cross necklace"
     },
     {
       "id": "prod-9",
       "description": "Corrente Cubana Premium",
-      "imageUrl": "https://images.unsplash.com/photo-1650989928553-0a22f9c9644d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdWJhbiUyMGNoYWlufGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1601119868146-5e620bf3405f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjdWJhbiUyMGNoYWlufGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cuban chain"
     },
     {
       "id": "prod-10",
       "description": "Corrente Emblema Real Premium",
-      "imageUrl": "https://images.unsplash.com/photo-1679973296602-f49b58765ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJlbWl1bSUyMGNoYWlufGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "premium chain"
+      "imageUrl": "https://images.unsplash.com/photo-1655550077164-9e9f8bd3e605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcmVtaXVtJTIwcm95YWwlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "premium royal necklace"
     },
     {
       "id": "prod-11",
       "description": "Corrente Cruz Circular Delicada",
-      "imageUrl": "https://images.unsplash.com/photo-1688685567139-70841b903f18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXJjdWxhciUyMG5lY2tsYWNlfGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "circular necklace"
+      "imageUrl": "https://images.unsplash.com/photo-1679973298076-07d422275c7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaXJjdWxhciUyMGNyb3NzJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "circular cross necklace"
     },
     {
       "id": "prod-12",
       "description": "Corrente Medalha Senhor",
-      "imageUrl": "https://images.unsplash.com/photo-1632212782195-4dad1dc3144c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWVkYWwlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Mjg5ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "medal necklace"
+      "imageUrl": "https://images.unsplash.com/photo-1655550077164-9e9f8bd3e605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb3JkJTIwbWVkYWwlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lord medal necklace"
+    },
+    {
+      "id": "prod-13",
+      "description": "Corrente Ferradura com Cavalo",
+      "imageUrl": "https://images.unsplash.com/photo-1651305333878-6a857d075a58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aG9yc2UlMjBob3JzZXNob2UlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjE1Nzk2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "horse horseshoe necklace"
+    },
+    {
+      "id": "prod-14",
+      "description": "Corrente Ferradura Premium",
+      "imageUrl": "https://images.unsplash.com/photo-1679973300095-714efae2ed6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcmVtaXVtJTIwaG9yc2VzaG9lJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "premium horseshoe necklace"
     }
   ]
 }
