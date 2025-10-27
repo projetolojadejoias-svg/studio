@@ -8,6 +8,7 @@ export type Product = {
     text: string;
     variant: 'success' | 'destructive' | 'default' | 'secondary' | 'outline';
   }[];
+  discount?: number;
 };
 
 export const products: Product[] = [
@@ -21,6 +22,7 @@ export const products: Product[] = [
       { text: 'Certificado', variant: 'success' },
       { text: '3 restantes', variant: 'destructive' },
     ],
+    discount: 10,
   },
   {
     id: '2',
@@ -32,6 +34,7 @@ export const products: Product[] = [
       { text: 'Certificado', variant: 'success' },
       { text: '2 restantes', variant: 'destructive' },
     ],
+    discount: 30,
   },
   {
     id: '3',
@@ -48,6 +51,7 @@ export const products: Product[] = [
     price: '179,99',
     image: 'prod-4',
     tags: [{ text: 'Certificado', variant: 'success' }],
+    discount: 10,
   },
   {
     id: '5',
@@ -75,6 +79,7 @@ export const products: Product[] = [
     price: '149,99',
     image: 'prod-7',
     tags: [{ text: 'Certificado', variant: 'success' }],
+    discount: 15,
   },
   {
     id: '8',

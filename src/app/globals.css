@@ -18,7 +18,7 @@
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
@@ -43,7 +43,7 @@
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
@@ -65,5 +65,44 @@
 @layer utilities {
   .transition-luxury {
     @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+.porc_desconto {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #E60023;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .porc_desconto {
+    width: 35px;
+    height: 35px;
+    font-size: 0.8rem;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .porc_desconto {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+    top: 6px;
+    left: 6px;
   }
 }

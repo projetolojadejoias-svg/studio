@@ -19,6 +19,9 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Card className="group bg-background/80 border-border hover:border-primary/50 transition-luxury overflow-hidden shadow-card hover:shadow-luxury">
       <div className="relative overflow-hidden">
+        {product.discount && (
+          <span className="porc_desconto">-{product.discount}%</span>
+        )}
         {productImage && (
           <Image
             src={productImage.imageUrl}
@@ -42,7 +45,7 @@ export function ProductCard({ product }: ProductCardProps) {
             </Link>
           </Button>
         </div>
-        <div className="absolute top-3 left-3 flex gap-2">
+        <div className="absolute top-3 right-3 flex flex-col gap-2">
           {product.tags.map((tag, index) => (
             <Badge key={index} variant={tag.variant} className="flex items-center gap-1">
               {tag.variant === "success" && <Shield className="h-3 w-3" />}
