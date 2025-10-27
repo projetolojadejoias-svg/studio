@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: 0 0% 4%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -72,8 +72,8 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #E60023;
-  color: #FFFFFF;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
   font-weight: 700;
   font-size: 0.9rem;
   border-radius: 50%;

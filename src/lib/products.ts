@@ -19,7 +19,6 @@ export const products: Product[] = [
     price: '189,99',
     image: 'prod-1',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '3 restantes', variant: 'destructive' },
     ],
     discount: 10,
@@ -31,7 +30,6 @@ export const products: Product[] = [
     price: '179,99',
     image: 'prod-2',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '2 restantes', variant: 'destructive' },
     ],
     discount: 30,
@@ -42,7 +40,7 @@ export const products: Product[] = [
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '169,99',
     image: 'prod-3',
-    tags: [{ text: 'Certificado', variant: 'success' }],
+    tags: [],
   },
   {
     id: '4',
@@ -50,7 +48,7 @@ export const products: Product[] = [
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '179,99',
     image: 'prod-4',
-    tags: [{ text: 'Certificado', variant: 'success' }],
+    tags: [],
     discount: 10,
   },
   {
@@ -60,7 +58,6 @@ export const products: Product[] = [
     price: '199,99',
     image: 'prod-5',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '2 restantes', variant: 'destructive' },
     ],
   },
@@ -70,7 +67,7 @@ export const products: Product[] = [
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '159,99',
     image: 'prod-6',
-    tags: [{ text: 'Certificado', variant: 'success' }],
+    tags: [],
   },
   {
     id: '7',
@@ -78,7 +75,7 @@ export const products: Product[] = [
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '149,99',
     image: 'prod-7',
-    tags: [{ text: 'Certificado', variant: 'success' }],
+    tags: [],
     discount: 15,
   },
   {
@@ -88,7 +85,6 @@ export const products: Product[] = [
     price: '179,99',
     image: 'prod-8',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '3 restantes', variant: 'destructive' },
     ],
   },
@@ -99,7 +95,6 @@ export const products: Product[] = [
     price: '199,99',
     image: 'prod-9',
     tags: [
-      { text: 'Certificado', variant: 'success' },
     ],
   },
   {
@@ -109,7 +104,6 @@ export const products: Product[] = [
     price: '219,99',
     image: 'prod-10',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '2 restantes', variant: 'destructive' },
     ],
   },
@@ -120,7 +114,6 @@ export const products: Product[] = [
     price: '169,99',
     image: 'prod-11',
     tags: [
-      { text: 'Certificado', variant: 'success' },
     ],
   },
   {
@@ -130,7 +123,6 @@ export const products: Product[] = [
     price: '199,99',
     image: 'prod-12',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '3 restantes', variant: 'destructive' },
     ],
   },
@@ -141,7 +133,6 @@ export const products: Product[] = [
     price: '229,99',
     image: 'prod-13',
     tags: [
-      { text: 'Certificado', variant: 'success' },
     ],
   },
   {
@@ -151,7 +142,6 @@ export const products: Product[] = [
     price: '249,99',
     image: 'prod-14',
     tags: [
-      { text: 'Certificado', variant: 'success' },
       { text: '1 restante', variant: 'destructive' },
     ],
   },
