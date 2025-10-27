@@ -7,7 +7,7 @@ export function TrendingProducts() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-luxury-lg text-foreground font-headline mb-4">EM ALTA</h2>
+          <h2 className="text-luxury-lg text-foreground font-headline mb-4">AS PEÇAS MAIS EM ALTA</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Peças selecionadas com autenticidade verificada e garantia total
           </p>
