@@ -81,21 +81,19 @@ export function Header() {
           </div>
 
           {/* Logo */}
-          <Link
+          <a
             href="/"
-            className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center"
+            className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-50"
             aria-label="Russo Store - Joias, Relógios e Acessórios"
           >
-            <Image
+            <img
               src="https://i.imgur.com/dOQhqsY.png"
               alt="Russo Store Logo"
-              width={200}
-              height={80}
-              className="h-16 w-auto md:h-20 lg:h-24 object-contain transition-all duration-300 ease-in-out hover:scale-105"
+              className="logo-russo-store transition-all duration-500 ease-in-out hover:scale-105"
               loading="lazy"
               decoding="async"
             />
-          </Link>
+          </a>
 
           {/* Icons */}
           <div className="flex items-center gap-2">

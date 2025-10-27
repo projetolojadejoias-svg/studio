@@ -4,52 +4,52 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 45 80% 55%;
-    --primary-foreground: 0 0% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 48 95% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 45 80% 55%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 45 80% 55%;
-    --primary-foreground: 0 0% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+    --card: 224 71% 4%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 48 95% 50%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 45 80% 55%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
@@ -87,10 +87,6 @@
   transition: all 0.3s ease;
 }
 
-header a img:hover {
-  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.6));
-}
-
 @media (max-width: 1024px) {
   .porc_desconto {
     width: 35px;
@@ -108,5 +104,50 @@ header a img:hover {
     font-size: 0.7rem;
     top: 6px;
     left: 6px;
+  }
+}
+
+/* LOGO CENTRAL RUSSO STORE */
+.logo-russo-store {
+  height: 130px; /* Tamanho base grande e visível */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Leve animação no hover */
+.logo-russo-store:hover {
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.6));
+}
+
+/* 🖥️ Versão Desktop - destaque máximo */
+@media (min-width: 1280px) {
+  .logo-russo-store {
+    height: 160px; /* Maior destaque visual no header */
+  }
+}
+
+/* 💻 Versão intermediária (notebooks e tablets em modo paisagem) */
+@media (min-width: 992px) and (max-width: 1279px) {
+  .logo-russo-store {
+    height: 140px;
+  }
+}
+
+/* 📱 Tablets verticais */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-russo-store {
+    height: 110px;
+  }
+}
+
+/* 📱 Mobile - logo ainda visível e proporcional */
+@media (max-width: 767px) {
+  .logo-russo-store {
+    height: 90px;
   }
 }
