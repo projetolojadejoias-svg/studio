@@ -3,6 +3,7 @@ export type Product = {
   name: string;
   description: string;
   price: string;
+  originalPrice?: string;
   image: string;
   tags: {
     text: string;
@@ -17,6 +18,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Emblema Real',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '189,99',
+    originalPrice: '210,00',
     image: 'prod-1',
     tags: [
       { text: '3 restantes', variant: 'destructive' },
@@ -28,6 +30,7 @@ export const products: Product[] = [
     name: 'Corrente com Escudo Brasão',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '179,99',
+    originalPrice: '257,13',
     image: 'prod-2',
     tags: [
       { text: '2 restantes', variant: 'destructive' },
@@ -39,6 +42,7 @@ export const products: Product[] = [
     name: 'Corrente com Cruz Clássica',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '169,99',
+    originalPrice: '212,49',
     image: 'prod-3',
     tags: [],
     discount: 20,
@@ -48,6 +52,7 @@ export const products: Product[] = [
     name: 'Corrente com Estrela de Davi',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '179,99',
+    originalPrice: '199,99',
     image: 'prod-4',
     tags: [],
     discount: 10,
@@ -57,6 +62,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Medalhão',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '199,99',
+    originalPrice: '235,28',
     image: 'prod-5',
     tags: [
       { text: '2 restantes', variant: 'destructive' },
@@ -68,6 +74,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Redondo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '159,99',
+    originalPrice: '168,41',
     image: 'prod-6',
     tags: [],
     discount: 5,
@@ -77,6 +84,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Chave',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '149,99',
+    originalPrice: '176,46',
     image: 'prod-7',
     tags: [],
     discount: 15,
@@ -86,6 +94,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Relicário',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '179,99',
+    originalPrice: '239,99',
     image: 'prod-8',
     tags: [
       { text: '3 restantes', variant: 'destructive' },
@@ -97,6 +106,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Cruz Luxo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '199,99',
+    originalPrice: '222,21',
     image: 'prod-9',
     tags: [
     ],
@@ -107,6 +117,7 @@ export const products: Product[] = [
     name: 'Corrente com Pingente Premium',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '219,99',
+    originalPrice: '249,99',
     image: 'prod-10',
     tags: [
       { text: '2 restantes', variant: 'destructive' },
@@ -118,6 +129,7 @@ export const products: Product[] = [
     name: 'Corrente Ferradura com Cavalo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '229,99',
+    originalPrice: '255,54',
     image: 'prod-13',
     tags: [
     ],
@@ -128,6 +140,7 @@ export const products: Product[] = [
     name: 'Corrente Ferradura Premium',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '249,99',
+    originalPrice: '294,11',
     image: 'prod-14',
     tags: [
       { text: '1 restante', variant: 'destructive' },
