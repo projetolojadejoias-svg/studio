@@ -62,24 +62,6 @@ export function Confidence() {
             </Card>
           ))}
         </div>
-
-        <div className="bg-background/80 border border-border rounded-2xl p-8 text-center shadow-luxury">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Ainda tem dúvidas sobre a autenticidade?</h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Fale com nossos especialistas para avaliação ao vivo via WhatsApp ou videochamada. Verificação completa antes da sua decisão de compra.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-success hover:bg-success/90 text-success-foreground">
-              <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank">
-                <MessageCircle className="h-5 w-5 mr-2" />
-                Falar com Especialista
-              </Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Ver Certificados de Exemplo
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );
