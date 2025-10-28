@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="https://i.imgur.com/7iJiYpl.png"
+        src="https://i.imgur.com/2yYIgsO.png"
         alt="Fundo de joias douradas"
         fill
         className="object-cover"
