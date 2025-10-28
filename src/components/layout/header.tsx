@@ -1,16 +1,18 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetFooter } from "@/components/ui/sheet";
 import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, Facebook, MessageCircle, Truck } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { products } from "@/lib/products";
 import { Input } from "@/components/ui/input";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { SheetClose } from "@/components/ui/sheet";
+import { useCart } from "@/context/cart-context";
 
 export function Header() {
-  const cartItems = products.slice(0, 2);
+  const { cartItems, removeFromCart } = useCart();
   const subtotal = cartItems.reduce((acc, product) => acc + parseFloat(product.price.replace(',', '.')), 0);
 
   return (
@@ -112,9 +114,11 @@ export function Header() {
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="relative text-white hover:bg-white/10">
                   <ShoppingBag className="h-5 w-5" />
-                  <span className="absolute -top-1 -right-1 h-5 w-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
-                    {cartItems.length}
-                  </span>
+                  {cartItems.length > 0 && (
+                    <span className="absolute -top-1 -right-1 h-5 w-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center">
+                      {cartItems.length}
+                    </span>
+                  )}
                 </Button>
               </SheetTrigger>
               <SheetContent className="w-full sm:max-w-md p-0 flex flex-col bg-[#0D0D0F] text-white border-l-white/20">
@@ -134,7 +138,7 @@ export function Header() {
                             <h4 className="font-semibold text-sm text-white">{item.name}</h4>
                             <p className="text-sm text-white/70">R$ {item.price}</p>
                           </div>
-                           <Button variant="ghost" size="icon" className="w-8 h-8 text-white/70 hover:bg-white/10">
+                           <Button variant="ghost" size="icon" className="w-8 h-8 text-white/70 hover:bg-white/10" onClick={() => removeFromCart(item.id)}>
                             <X className="h-4 w-4" />
                           </Button>
                         </div>
@@ -149,7 +153,9 @@ export function Header() {
                       <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                          <Link href="https://wa.me/5562991593761?text=QUERO%20FINALIZAR%20MINHA%20COMPRA%20!" target="_blank">Finalizar Compra</Link>
                       </Button>
-                       <Button variant="outline" className="w-full text-white border-white/30 hover:bg-white/10">Continuar Comprando</Button>
+                       <Button asChild variant="outline" className="w-full text-white border-white/30 hover:bg-white/10">
+                         <SheetClose>Continuar Comprando</SheetClose>
+                       </Button>
                     </SheetFooter>
                   </>
                 ) : (

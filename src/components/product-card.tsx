@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CreditCard, Eye, Heart, ShoppingCart, Shield, ShoppingBag, X } from "lucide-react";
+import { CreditCard, Eye, ShoppingBag, X, Shield } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import React from "react";
+import { useCart } from "@/context/cart-context";
 
 type ProductCardProps = {
   product: Product;
@@ -18,6 +18,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const productImage = PlaceHolderImages.find(img => img.id === product.image);
   const installmentValue = (parseFloat(product.price.replace(',', '.')) / 6).toFixed(2).replace('.', ',');
   const [isLightboxOpen, setIsLightboxOpen] = React.useState(false);
+  const { addToCart } = useCart();
 
   const openLightbox = () => setIsLightboxOpen(true);
   const closeLightbox = () => setIsLightboxOpen(false);
@@ -33,6 +34,10 @@ export function ProductCard({ product }: ProductCardProps) {
       window.removeEventListener('keydown', handleEsc);
     };
   }, []);
+
+  const handleAddToCart = () => {
+    addToCart(product);
+  };
 
   return (
     <>
@@ -85,10 +90,8 @@ export function ProductCard({ product }: ProductCardProps) {
                 6x de R$ {installmentValue} sem juros
               </p>
             </div>
-            <Button asChild className="w-full">
-              <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank">
-                <ShoppingBag className="h-5 w-5" />
-              </Link>
+            <Button className="w-full" onClick={handleAddToCart}>
+              <ShoppingBag className="h-5 w-5" />
             </Button>
           </div>
         </CardContent>
