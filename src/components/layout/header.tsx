@@ -176,9 +176,8 @@ export function Header() {
       
       {/* Navigation Bar */}
       <nav className="hidden md:flex container mx-auto px-6 md:px-12 items-center justify-center h-12 gap-8">
-        <Link href="/" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Home</Link>
         <Link href="#trending-products" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Coleções</Link>
-        <Link href="#confidence" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Sobre</Link>
+        <Link href="#footer" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Sobre</Link>
         <Link href="#footer" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Contato</Link>
       </nav>
     </header>
