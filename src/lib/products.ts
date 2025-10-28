@@ -54,7 +54,7 @@ export const products: Product[] = [
   },
   {
     id: '5',
-    name: 'Corrente com Emblema de Ouro',
+    name: 'Corrente com Pingente Medalhão',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '199,99',
     image: 'prod-5',
@@ -65,7 +65,7 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    name: 'Corrente com Ferradura',
+    name: 'Corrente com Pingente Redondo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '159,99',
     image: 'prod-6',
@@ -74,7 +74,7 @@ export const products: Product[] = [
   },
   {
     id: '7',
-    name: 'Corrente Estrela de Davi Delicada',
+    name: 'Corrente com Pingente Chave',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '149,99',
     image: 'prod-7',
@@ -83,7 +83,7 @@ export const products: Product[] = [
   },
   {
     id: '8',
-    name: 'Corrente Cruz Ouro 18k',
+    name: 'Corrente com Pingente Relicário',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '179,99',
     image: 'prod-8',
@@ -94,7 +94,7 @@ export const products: Product[] = [
   },
     {
     id: '9',
-    name: 'Corrente Cubana Premium',
+    name: 'Corrente com Pingente Cruz Luxo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '199,99',
     image: 'prod-9',
@@ -104,7 +104,7 @@ export const products: Product[] = [
   },
   {
     id: '10',
-    name: 'Corrente Emblema Real Premium',
+    name: 'Corrente com Pingente Premium',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
     price: '219,99',
     image: 'prod-10',
