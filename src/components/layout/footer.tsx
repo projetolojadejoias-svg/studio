@@ -124,7 +124,7 @@ export function Footer() {
         </div>
 
         <div className="py-6 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2025 Russo Store. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+          <p>© 2025 Russo Store. Todos os direitos reservados. CNPJ: 24.636.118/0001-79</p>
           <div className="mt-2 space-x-4">
             <Link href="#" className="hover:text-primary transition-luxury">Termos de Uso</Link>
             <Link href="#" className="hover:text-primary transition-luxury">Política de Privacidade</Link>
