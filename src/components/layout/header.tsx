@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetFooter } from "@/components/ui/sheet";
-import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, Facebook, MessageCircle, Truck } from "lucide-react";
+import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
@@ -61,9 +61,6 @@ ${itemsText}
           <div className="flex items-center gap-3">
             <Link href="https://www.instagram.com/russo_stor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="h-4 w-4 text-white/60 hover:text-primary transition-luxury" />
-            </Link>
-            <Link href="#" aria-label="Facebook">
-              <Facebook className="h-4 w-4 text-white/60 hover:text-primary transition-luxury" />
             </Link>
             <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank" aria-label="WhatsApp">
               <MessageCircle className="h-4 w-4 text-white/60 hover:text-primary transition-luxury" />
