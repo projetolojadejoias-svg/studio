@@ -17,16 +17,13 @@ export function TrendingProducts({ onProductClick }: TrendingProductsProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 mb-12">
           {products.slice(0, 12).map((product) => (
             <ProductCard key={product.id} product={product} onProductClick={onProductClick} />
           ))}
         </div>
 
         <div className="text-center">
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground h-11">
-            Ver Toda a Coleção
-          </Button>
         </div>
       </div>
     </section>
