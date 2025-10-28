@@ -41,6 +41,8 @@ export function QuickViewDrawer({ product, isOpen, onClose }: QuickViewDrawerPro
   useEffect(() => {
     if (product && product.sizes) {
       setSelectedSize(product.sizes[0]);
+    } else {
+      setSelectedSize('70 cm');
     }
   }, [product]);
 
@@ -136,30 +138,17 @@ ${window.location.origin}/products/${product.id}
                 </div>
               )}
 
-              {product.sizes && (
-                <div className="mt-6">
-                  <h3 className="text-sm font-medium text-gray-300">Tamanho</h3>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {product.sizes.map((size) => (
-                      <button
-                        key={size}
-                        onClick={() => setSelectedSize(size)}
-                        className={cn(
-                          "px-4 py-2 border rounded-full text-sm transition",
-                          {
-                            "bg-[#d4af37] text-black border-[#d4af37]": selectedSize === size,
-                            "border-gray-600 hover:border-[#d4af37]": selectedSize !== size,
-                            "line-through text-gray-500 cursor-not-allowed": size === '21cm' // Example for unavailable
-                          }
-                        )}
-                        disabled={size === '21cm'}
-                      >
-                        {size}
-                      </button>
-                    ))}
-                  </div>
+              <div className="mt-6">
+                <h3 className="text-sm font-medium text-gray-300 mb-2">Tamanho</h3>
+                <div className="flex justify-center">
+                  <button
+                    className="px-6 py-2 border rounded-full text-sm transition bg-[#d4af37] text-black border-[#d4af37] font-semibold"
+                  >
+                    Tamanho Único — 70 cm
+                  </button>
                 </div>
-              )}
+              </div>
+
 
               <div className="mt-auto pt-8">
                 <Button className="w-full h-12 bg-[#e5e5e5] text-black hover:bg-white" onClick={handleAddToCart}>
