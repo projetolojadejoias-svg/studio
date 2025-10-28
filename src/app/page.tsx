@@ -4,7 +4,6 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/hero";
 import { TrendingProducts } from "@/components/trending-products";
-import { Confidence } from "@/components/confidence";
 import { QuickViewDrawer } from "@/components/quick-view-drawer";
 import { useState } from "react";
 import type { Product } from "@/lib/products";
@@ -29,7 +28,6 @@ export default function Home() {
         <div id="trending-products">
           <TrendingProducts onProductClick={handleOpenQuickView} />
         </div>
-        <Confidence />
       </main>
       <Footer />
       <QuickViewDrawer
