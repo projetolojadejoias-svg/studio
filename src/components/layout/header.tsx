@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetFooter } from "@/components/ui/sheet";
-import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, MessageCircle } from "lucide-react";
+import { Search, User, ShoppingBag, Menu, Heart, X, Instagram, MessageCircle, Mail } from "lucide-react";
 import Link from "next/link";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
@@ -12,11 +12,13 @@ import { SheetClose } from "@/components/ui/sheet";
 import { useCart } from "@/context/cart-context";
 import type { Product } from "@/lib/products";
 import React, { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   const { cartItems, removeFromCart } = useCart();
   const subtotal = cartItems.reduce((acc, product) => acc + parseFloat(product.price.replace(',', '.')), 0);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
 
   const formatPrice = (price: number) => {
     return price.toFixed(2).replace('.', ',');
@@ -166,7 +168,7 @@ ${itemsText}
 
           {/* Icons */}
           <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-white/10">
+            <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-white/10" onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}>
               <Search className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="hidden md:flex text-white hover:bg-white/10">
@@ -241,6 +243,27 @@ ${itemsText}
         </div>
       </div>
       
+      {/* Mobile Search Bar */}
+      <div id="mobileSearchBox" className={cn(
+        "mt-2 w-full px-4 md:hidden animate-fade-in-fast",
+        isMobileSearchOpen ? "block" : "hidden"
+      )}>
+        <div className="relative">
+          <Input 
+            type="text" 
+            placeholder="O que você procura?" 
+            className="w-full rounded-md bg-transparent border border-white/20 px-3 py-2 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyPress={handleKeyPress}
+          />
+          <Search 
+            className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white/50 cursor-pointer"
+            onClick={handleSearch}
+          />
+        </div>
+      </div>
+
       {/* Navigation Bar */}
       <nav className="hidden md:flex container mx-auto px-6 md:px-12 items-center justify-center h-12 gap-8">
         <Link href="#trending-products" className="text-sm font-medium text-white/80 hover:text-primary transition-colors">Coleções</Link>
