@@ -114,27 +114,6 @@ export const products: Product[] = [
     discount: 12,
   },
   {
-    id: '11',
-    name: 'Corrente Cruz Circular Delicada',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '169,99',
-    image: 'prod-11',
-    tags: [
-    ],
-    discount: 18,
-  },
-  {
-    id: '12',
-    name: 'Corrente Medalha Senhor',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '199,99',
-    image: 'prod-12',
-    tags: [
-      { text: '3 restantes', variant: 'destructive' },
-    ],
-    discount: 22,
-  },
-  {
     id: '13',
     name: 'Corrente Ferradura com Cavalo',
     description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
