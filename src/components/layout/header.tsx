@@ -100,7 +100,7 @@ ${itemsText}
                         <Link href="#" className="block py-2 text-white/70 hover:text-primary">Pulseiras Premium</Link>
                       </AccordionContent>
                     </AccordionItem>
-                    <Link href="#confidence" className="block py-4 font-medium hover:underline">Sobre</Link>
+                    <Link href="#footer" className="block py-4 font-medium hover:underline">Sobre</Link>
                     <Link href="#footer" className="block py-4 font-medium hover:underline">Contato</Link>
                   </Accordion>
                 </div>
