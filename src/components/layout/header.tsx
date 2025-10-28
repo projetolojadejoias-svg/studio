@@ -95,9 +95,9 @@ ${itemsText}
                     <AccordionItem value="colecoes" className="border-b-white/10">
                       <AccordionTrigger className="hover:no-underline">Coleções</AccordionTrigger>
                       <AccordionContent className="pl-4">
-                        <Link href="#" className="block py-2 text-white/70 hover:text-primary">Relógios de Luxo</Link>
-                        <Link href="#" className="block py-2 text-white/70 hover:text-primary">Correntes de Ouro</Link>
-                        <Link href="#" className="block py-2 text-white/70 hover:text-primary">Pulseiras Premium</Link>
+                        <Link href="#trending-products" className="block py-2 text-white/70 hover:text-primary">Peças de Ouro 18K</Link>
+                        <Link href="#trending-products" className="block py-2 text-white/70 hover:text-primary">Correntes de Ouro</Link>
+                        <Link href="#trending-products" className="block py-2 text-white/70 hover:text-primary">Pulseiras Premium</Link>
                       </AccordionContent>
                     </AccordionItem>
                     <Link href="#footer" className="block py-4 font-medium hover:underline">Sobre</Link>

@@ -41,12 +41,12 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-foreground">Produtos</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link href="#" className="hover:text-primary transition-luxury">Relógios de Luxo</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-luxury">Correntes de Ouro</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-luxury">Pulseiras Premium</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-luxury">Pingentes Exclusivos</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-luxury">Rolex Submariner</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-luxury">Bvlgari Collection</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Peças de Ouro 18K</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Correntes de Ouro</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Pulseiras Premium</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Pingentes Exclusivos</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Rolex Submariner</Link></li>
+              <li><Link href="#trending-products" className="hover:text-primary transition-luxury">Bvlgari Collection</Link></li>
             </ul>
           </div>
 
