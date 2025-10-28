@@ -11,14 +11,40 @@ import Image from "next/image";
 import { SheetClose } from "@/components/ui/sheet";
 import { useCart } from "@/context/cart-context";
 import type { Product } from "@/lib/products";
+import React, { useState } from "react";
 
 export function Header() {
   const { cartItems, removeFromCart } = useCart();
   const subtotal = cartItems.reduce((acc, product) => acc + parseFloat(product.price.replace(',', '.')), 0);
+  const [searchTerm, setSearchTerm] = useState('');
 
   const formatPrice = (price: number) => {
     return price.toFixed(2).replace('.', ',');
   }
+
+  const handleSearch = () => {
+    const term = searchTerm.toLowerCase().trim();
+    if (!term) return;
+
+    if (term.includes('ouro') || term.includes('colar') || term.includes('corrente') || term.includes('pingente')) {
+      window.location.href = '#trending-products';
+    } 
+    else if (term.includes('pulseira')) {
+      window.location.href = '#trending-products';
+    } 
+    else if (term.includes('anel') || term.includes('joia') || term.includes('peça') || term.includes('luxo')) {
+      window.location.href = '#trending-products';
+    } 
+    else {
+      alert('Nenhum resultado encontrado. Tente: "corrente", "ouro", "pulseira", etc.');
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
 
   const generateWhatsAppMessage = () => {
     const itemsText = cartItems.map((item, index) => {
@@ -109,8 +135,17 @@ ${itemsText}
 
             {/* Desktop Search */}
             <div className="hidden md:flex relative">
-              <Input placeholder="O que você procura?" className="w-64 lg:w-80 pr-10 bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:bg-white/20 focus:ring-primary" />
-              <Search className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white/50" />
+              <Input 
+                placeholder="O que você procura?" 
+                className="w-64 lg:w-80 pr-10 bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:bg-white/20 focus:ring-primary"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyPress={handleKeyPress}
+              />
+              <Search 
+                className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white/50 cursor-pointer"
+                onClick={handleSearch}
+              />
             </div>
           </div>
 
