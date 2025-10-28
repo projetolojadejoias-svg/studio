@@ -56,12 +56,20 @@
 @layer base {
   html {
     @apply scroll-smooth;
+    scroll-padding-top: 6rem; /* Adjust this value based on your sticky header's height */
   }
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  img {
+    content-visibility: auto;
+    loading: lazy;
+    -webkit-user-drag: none;
   }
 }
 
