@@ -57,8 +57,32 @@ export function QuickViewDrawer({ product, isOpen, onClose }: QuickViewDrawerPro
   };
   
   const handleBuyNow = () => {
-    handleAddToCart();
-    window.open('https://wa.me/5562991593761?text=QUERO%20FINALIZAR%20MINHA%20COMPRA%20!', '_blank');
+    if (!product) return;
+  
+    const message = `💎 *QUERO COMPRAR ESTE PRODUTO!*
+
+🔖 *PRODUTO:* ${product.name}
+
+📏 *Tamanho:* ${selectedSize || 'Único'}
+🔢 *Quantidade:* 1x
+💰 *Valor Unitário:* R$ ${product.price}
+💵 *Valor Total:* R$ ${product.price}
+
+━━━━━━━━━━━━━━━━━
+
+${product.originalPrice ? `⚡ *Economia:* R$ ${economy}` : ''}
+
+🔗 *Link do Produto:*
+${window.location.origin}/products/${product.id}
+
+━━━━━━━━━━━━━━━━━
+
+📍 Gostaria de finalizar este pedido!
+🚚 Qual o prazo de entrega para meu CEP?
+💳 Aceita PIX/Cartão?`;
+
+    const whatsappUrl = `https://wa.me/5562991593761?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   }
 
   return (

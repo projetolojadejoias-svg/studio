@@ -10,10 +10,48 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { SheetClose } from "@/components/ui/sheet";
 import { useCart } from "@/context/cart-context";
+import type { Product } from "@/lib/products";
 
 export function Header() {
   const { cartItems, removeFromCart } = useCart();
   const subtotal = cartItems.reduce((acc, product) => acc + parseFloat(product.price.replace(',', '.')), 0);
+
+  const formatPrice = (price: number) => {
+    return price.toFixed(2).replace('.', ',');
+  }
+
+  const generateWhatsAppMessage = () => {
+    const itemsText = cartItems.map((item, index) => {
+      return `${index + 1}. *${item.name}*
+   - Preço: R$ ${item.price}
+   - Quantidade: 1x`;
+    }).join('\n\n');
+
+    const message = `🛒 *QUERO FINALIZAR MINHA COMPRA!*
+
+📦 *ITENS DO PEDIDO:*
+
+${itemsText}
+
+━━━━━━━━━━━━━━━━━
+💰 *RESUMO DO PEDIDO:*
+
+*TOTAL: R$ ${formatPrice(subtotal)}*
+
+━━━━━━━━━━━━━━━━━
+
+📍 Gostaria de finalizar este pedido!
+🚚 Preciso calcular o frete para meu CEP.
+💳 Quais as formas de pagamento disponíveis?`;
+    
+    return encodeURIComponent(message);
+  }
+
+  const handleFinalizarCompra = () => {
+    const message = generateWhatsAppMessage();
+    const whatsappUrl = `https://wa.me/5562991593761?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-[#0D0D0F] text-white">
@@ -147,8 +185,8 @@ export function Header() {
                         <span>Subtotal</span>
                         <span>R$ {subtotal.toFixed(2).replace('.',',')}</span>
                       </div>
-                      <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                         <Link href="https://wa.me/5562991593761?text=QUERO%20FINALIZAR%20MINHA%20COMPRA%20!" target="_blank">Finalizar Compra</Link>
+                      <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={handleFinalizarCompra}>
+                         Finalizar Compra
                       </Button>
                        <Button asChild variant="outline" className="w-full text-white border-white/30 hover:bg-white/10">
                          <SheetClose>Continuar Comprando</SheetClose>

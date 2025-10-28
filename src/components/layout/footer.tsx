@@ -27,9 +27,11 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                 </Button>
               </Link>
-              <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
-                <MessageCircle className="h-5 w-5" />
-              </Button>
+              <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
+                  <MessageCircle className="h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="ghost" size="icon" className="text-muted-foreground hover:text-primary">
                 <Mail className="h-5 w-5" />
               </Button>
