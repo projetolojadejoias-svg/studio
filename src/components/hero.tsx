@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <Image
-        src="https://i.imgur.com/2yYIgsO.png"
+        src="https://i.imgur.com/mXFE99G.png"
         alt="Fundo de joias douradas"
         fill
         className="object-cover"
@@ -22,7 +22,7 @@ export function Hero() {
           Russo Store
         </h1>
         <p className="text-lg md:text-xl font-light mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:'600ms'] text-foreground">
-          Joias e Relógios de Primeira Linha. Autenticidade verificada e elegância atemporal.
+          Joias e colares de Primeira Linha. Autenticidade verificada e elegância atemporal.
         </p>
         <Link href="#trending-products">
             <Button
