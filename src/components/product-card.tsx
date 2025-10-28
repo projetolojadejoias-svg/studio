@@ -55,14 +55,6 @@ export function ProductCard({ product }: ProductCardProps) {
             <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black" onClick={openLightbox}>
               <Eye className="h-4 w-4" />
             </Button>
-            <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black">
-              <Heart className="h-4 w-4" />
-            </Button>
-            <Button asChild size="icon">
-              <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank">
-                <ShoppingCart className="h-4 w-4" />
-              </Link>
-            </Button>
           </div>
           <div className="absolute top-3 right-3 flex flex-col gap-2">
             {product.tags.map((tag, index) => (
