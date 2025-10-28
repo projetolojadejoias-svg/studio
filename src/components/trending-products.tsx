@@ -13,7 +13,7 @@ export function TrendingProducts() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {products.slice(0, 12).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
