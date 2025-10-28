@@ -12,15 +12,19 @@ import { useCart } from "@/context/cart-context";
 
 type ProductCardProps = {
   product: Product;
+  onProductClick: (product: Product) => void;
 };
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, onProductClick }: ProductCardProps) {
   const productImage = PlaceHolderImages.find(img => img.id === product.image);
   const installmentValue = (parseFloat(product.price.replace(',', '.')) / 6).toFixed(2).replace('.', ',');
   const [isLightboxOpen, setIsLightboxOpen] = React.useState(false);
   const { addToCart } = useCart();
 
-  const openLightbox = () => setIsLightboxOpen(true);
+  const openLightbox = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setIsLightboxOpen(true);
+  }
   const closeLightbox = () => setIsLightboxOpen(false);
 
   React.useEffect(() => {
@@ -35,13 +39,23 @@ export function ProductCard({ product }: ProductCardProps) {
     };
   }, []);
 
-  const handleAddToCart = () => {
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.stopPropagation();
     addToCart(product);
+    onProductClick(product);
+  };
+  
+  const handleViewClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    onProductClick(product);
   };
 
   return (
     <>
-      <Card className="group bg-background/80 border-border hover:border-primary/50 transition-luxury overflow-hidden shadow-card hover:shadow-luxury flex flex-col">
+      <Card 
+        className="group bg-background/80 border-border hover:border-primary/50 transition-luxury overflow-hidden shadow-card hover:shadow-luxury flex flex-col cursor-pointer"
+        onClick={() => onProductClick(product)}
+      >
         <div className="relative overflow-hidden">
           {product.discount && (
             <span className="porc_desconto">-{product.discount}%</span>
@@ -57,7 +71,7 @@ export function ProductCard({ product }: ProductCardProps) {
             />
           )}
           <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-luxury flex items-center justify-center gap-3">
-            <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black" onClick={openLightbox}>
+            <Button size="icon" variant="secondary" className="bg-white/90 hover:bg-white text-black" onClick={handleViewClick}>
               <Eye className="h-4 w-4" />
             </Button>
           </div>

@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { products } from "@/lib/products";
+import { products, Product } from "@/lib/products";
 import { ProductCard } from "./product-card";
 
-export function TrendingProducts() {
+type TrendingProductsProps = {
+  onProductClick: (product: Product) => void;
+};
+
+export function TrendingProducts({ onProductClick }: TrendingProductsProps) {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +19,7 @@ export function TrendingProducts() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {products.slice(0, 12).map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} onProductClick={onProductClick} />
           ))}
         </div>
 

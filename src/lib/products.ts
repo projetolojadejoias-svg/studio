@@ -5,6 +5,9 @@ export type Product = {
   price: string;
   originalPrice?: string;
   image: string;
+  images?: string[];
+  sizes?: string[];
+  stock?: boolean;
   tags: {
     text: string;
     variant: 'success' | 'destructive' | 'default' | 'secondary' | 'outline';
@@ -20,6 +23,9 @@ export const products: Product[] = [
     price: '189,99',
     originalPrice: '210,00',
     image: 'prod-1',
+    images: ['prod-1'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '3 restantes', variant: 'destructive' },
     ],
@@ -32,6 +38,9 @@ export const products: Product[] = [
     price: '179,99',
     originalPrice: '257,13',
     image: 'prod-2',
+    images: ['prod-2'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '2 restantes', variant: 'destructive' },
     ],
@@ -44,6 +53,9 @@ export const products: Product[] = [
     price: '169,99',
     originalPrice: '212,49',
     image: 'prod-3',
+    images: ['prod-3'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [],
     discount: 20,
   },
@@ -54,6 +66,9 @@ export const products: Product[] = [
     price: '179,99',
     originalPrice: '199,99',
     image: 'prod-4',
+    images: ['prod-4'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: false,
     tags: [],
     discount: 10,
   },
@@ -64,6 +79,9 @@ export const products: Product[] = [
     price: '199,99',
     originalPrice: '235,28',
     image: 'prod-5',
+    images: ['prod-5'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '2 restantes', variant: 'destructive' },
     ],
@@ -76,6 +94,9 @@ export const products: Product[] = [
     price: '159,99',
     originalPrice: '168,41',
     image: 'prod-6',
+    images: ['prod-6'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [],
     discount: 5,
   },
@@ -86,6 +107,9 @@ export const products: Product[] = [
     price: '149,99',
     originalPrice: '176,46',
     image: 'prod-7',
+    images: ['prod-7'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [],
     discount: 15,
   },
@@ -96,6 +120,9 @@ export const products: Product[] = [
     price: '179,99',
     originalPrice: '239,99',
     image: 'prod-8',
+    images: ['prod-8'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '3 restantes', variant: 'destructive' },
     ],
@@ -108,6 +135,9 @@ export const products: Product[] = [
     price: '199,99',
     originalPrice: '222,21',
     image: 'prod-9',
+    images: ['prod-9'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
     ],
     discount: 10,
@@ -119,6 +149,9 @@ export const products: Product[] = [
     price: '219,99',
     originalPrice: '249,99',
     image: 'prod-10',
+    images: ['prod-10'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '2 restantes', variant: 'destructive' },
     ],
@@ -131,6 +164,9 @@ export const products: Product[] = [
     price: '229,99',
     originalPrice: '255,54',
     image: 'prod-13',
+    images: ['prod-13'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
     ],
     discount: 10,
@@ -142,6 +178,9 @@ export const products: Product[] = [
     price: '249,99',
     originalPrice: '294,11',
     image: 'prod-14',
+    images: ['prod-14'],
+    sizes: ['17cm', '18cm', '19cm', '20cm', '21cm', '22cm'],
+    stock: true,
     tags: [
       { text: '1 restante', variant: 'destructive' },
     ],

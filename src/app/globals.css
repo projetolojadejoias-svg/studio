@@ -159,3 +159,24 @@
     height: 130px; /* visível e destacada, sem quebrar o header */
   }
 }
+
+/* Quick View Drawer */
+.drawer-overlay {
+  @apply fixed inset-0 bg-black/70 z-50 transition-opacity duration-300 ease-in-out;
+}
+
+.drawer-content {
+  @apply fixed top-0 right-0 h-full bg-[#1a1a1a] text-white z-50 transition-transform duration-300 ease-in-out shadow-2xl;
+  width: 480px;
+  transform: translateX(100%);
+}
+
+.drawer-content.active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .drawer-content {
+    width: 100%;
+  }
+}
