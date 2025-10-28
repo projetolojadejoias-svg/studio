@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CreditCard, Eye, Heart, ShoppingCart, Shield } from "lucide-react";
+import { CreditCard, Eye, Heart, ShoppingCart, Shield, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -47,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </Button>
         </div>
         <div className="absolute top-3 right-3 flex flex-col gap-2">
-          {product.tags.filter(tag => tag.text !== 'Certificado').map((tag, index) => (
+          {product.tags.map((tag, index) => (
             <Badge key={index} variant={tag.variant} className="flex items-center gap-1">
               {tag.variant === "success" && <Shield className="h-3 w-3" />}
               {tag.text}
@@ -77,7 +77,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </div>
           <Button asChild className="w-full">
             <Link href="https://wa.me/5562991593761?text=QUERO%20REALIZAR%20MINHA%20COMPRA%20!" target="_blank">
-              Comprar
+              <ShoppingBag className="h-5 w-5" />
             </Link>
           </Button>
         </div>
