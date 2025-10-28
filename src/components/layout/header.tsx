@@ -171,13 +171,7 @@ ${itemsText}
             <Button variant="ghost" size="icon" className="md:hidden text-white hover:bg-white/10" onClick={() => setIsMobileSearchOpen(!isMobileSearchOpen)}>
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hidden md:flex text-white hover:bg-white/10">
-              <Heart className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hidden md:flex text-white hover:bg-white/10">
-              <User className="h-5 w-5" />
-            </Button>
-
+            
             {/* Cart */}
             <Sheet>
               <SheetTrigger asChild>
@@ -273,3 +267,5 @@ ${itemsText}
     </header>
   );
 }
+
+    
