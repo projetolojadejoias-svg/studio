@@ -35,10 +35,7 @@ export function Header() {
             Autenticidade Verificada & Entrega Segura em Todo o Brasil
           </div>
           <div>
-            <Button variant="ghost" size="sm" className="text-xs h-auto py-1 px-2 text-white/60 hover:text-primary hover:bg-white/10">
-              <Truck className="h-4 w-4 mr-2" />
-              Rastrear Pedido
-            </Button>
+            
           </div>
         </div>
       </div>
