@@ -9,10 +9,15 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="text-3xl font-headline font-black text-primary">RS</div>
-              <span className="text-lg font-body font-bold text-foreground">RUSSO STORE</span>
-            </div>
+            <Link href="/" className="inline-block">
+              <Image 
+                src="https://i.imgur.com/dOQhqsY.png" 
+                alt="Russo Store Logo" 
+                width={180} 
+                height={60}
+                className="h-auto"
+              />
+            </Link>
             <p className="text-muted-foreground leading-relaxed">
               Joias e relógios de primeira linha com autenticidade verificada, entrega segura e garantia total.
             </p>
