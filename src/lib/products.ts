@@ -157,33 +157,4 @@ export const products: Product[] = [
     ],
     discount: 12,
   },
-  {
-    id: '13',
-    name: 'Corrente Ferradura com Cavalo',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '229,99',
-    originalPrice: '255,54',
-    image: 'prod-13',
-    images: ['prod-13'],
-    sizes: ['70 cm'],
-    stock: true,
-    tags: [
-    ],
-    discount: 10,
-  },
-  {
-    id: '14',
-    name: 'Corrente Ferradura Premium',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '249,99',
-    originalPrice: '294,11',
-    image: 'prod-14',
-    images: ['prod-14'],
-    sizes: ['70 cm'],
-    stock: true,
-    tags: [
-      { text: '1 restante', variant: 'destructive' },
-    ],
-    discount: 15,
-  },
 ];
