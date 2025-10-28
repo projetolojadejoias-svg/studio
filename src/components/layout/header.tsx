@@ -21,7 +21,7 @@ export function Header() {
       <div className="border-b border-white/10">
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between h-10">
           <div className="flex items-center gap-3">
-            <Link href="#" aria-label="Instagram">
+            <Link href="https://www.instagram.com/russo_stor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Instagram className="h-4 w-4 text-white/60 hover:text-primary transition-luxury" />
             </Link>
             <Link href="#" aria-label="Facebook">
