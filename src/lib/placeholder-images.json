@@ -15,7 +15,7 @@
     {
       "id": "prod-1",
       "description": "Corrente com Pingente Emblema Real",
-      "imageUrl": "https://i.imgur.com/65Nzwol.png",
+      "imageUrl": "https://i.imgur.com/jPGxLcg.png",
       "imageHint": "royal emblem necklace"
     },
     {
@@ -83,18 +83,6 @@
       "description": "Corrente Medalha Senhor",
       "imageUrl": "https://russo-gold-legacy-68453.lovable.app/images/corrente-medalha-senhor.jpg",
       "imageHint": "lord medal necklace"
-    },
-    {
-      "id": "prod-13",
-      "description": "Corrente Ferradura com Cavalo",
-      "imageUrl": "https://russo-gold-legacy-68453.lovable.app/images/corrente-ferradura-cavalo.jpg",
-      "imageHint": "horse horseshoe necklace"
-    },
-    {
-      "id": "prod-14",
-      "description": "Corrente Ferradura Premium",
-      "imageUrl": "https://images.unsplash.com/photo-1679973301543-d052236700d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcmVtaXVtJTIwaG9yc2VzaG9lJTIwbmVja2xhY2V8ZW58MHx8fHwxNzYxNTc5NjU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "premium horseshoe necklace"
     }
   ]
 }
