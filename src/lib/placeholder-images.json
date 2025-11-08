@@ -83,6 +83,42 @@
       "description": "Corrente Medalha Senhor",
       "imageUrl": "https://russo-gold-legacy-68453.lovable.app/images/corrente-medalha-senhor.jpg",
       "imageHint": "lord medal necklace"
+    },
+    {
+      "id": "prod-13",
+      "description": "Corrente Cruz Detalhada",
+      "imageUrl": "https://i.imgur.com/3ioNR7I.jpeg",
+      "imageHint": "detailed cross necklace"
+    },
+    {
+      "id": "prod-14",
+      "description": "Corrente Medalhão Sol",
+      "imageUrl": "https://i.imgur.com/nhFMWSE.jpeg",
+      "imageHint": "sun medallion necklace"
+    },
+    {
+      "id": "prod-15",
+      "description": "Corrente Cruz Templária",
+      "imageUrl": "https://i.imgur.com/p7uYqUS.jpeg",
+      "imageHint": "templar cross necklace"
+    },
+    {
+      "id": "prod-16",
+      "description": "Corrente Nórdica",
+      "imageUrl": "https://i.imgur.com/arnTa0L.jpeg",
+      "imageHint": "nordic pendant necklace"
+    },
+    {
+      "id": "prod-17",
+      "description": "Corrente Leão",
+      "imageUrl": "https://i.imgur.com/Qge7W8V.jpeg",
+      "imageHint": "lion pendant necklace"
+    },
+    {
+      "id": "prod-18",
+      "description": "Corrente Âncora",
+      "imageUrl": "https://i.imgur.com/daot4EA.jpeg",
+      "imageHint": "anchor pendant necklace"
     }
   ]
 }
