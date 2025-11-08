@@ -43,22 +43,10 @@
       "imageHint": "medallion pendant necklace"
     },
     {
-      "id": "prod-6",
-      "description": "Corrente com Pingente Redondo",
-      "imageUrl": "https://i.imgur.com/z66C3Qe.png",
-      "imageHint": "round pendant necklace"
-    },
-    {
       "id": "prod-7",
       "description": "Corrente com Pingente Chave",
       "imageUrl": "https://i.imgur.com/FnqKi1V.jpeg",
       "imageHint": "key pendant necklace"
-    },
-    {
-      "id": "prod-8",
-      "description": "Corrente com Pingente Relicário",
-      "imageUrl": "https://i.imgur.com/BZc9lYY.png",
-      "imageHint": "locket pendant necklace"
     },
     {
       "id": "prod-9",
@@ -71,18 +59,6 @@
       "description": "Corrente com Pingente Premium",
       "imageUrl": "https://i.imgur.com/Jv0NUue.jpeg",
       "imageHint": "premium pendant necklace"
-    },
-    {
-      "id": "prod-11",
-      "description": "Corrente Cruz Circular Delicada",
-      "imageUrl": "https://russo-gold-legacy-68453.lovable.app/images/corrente-cruz-circular-delicada.jpg",
-      "imageHint": "circular cross necklace"
-    },
-    {
-      "id": "prod-12",
-      "description": "Corrente Medalha Senhor",
-      "imageUrl": "https://russo-gold-legacy-68453.lovable.app/images/corrente-medalha-senhor.jpg",
-      "imageHint": "lord medal necklace"
     },
     {
       "id": "prod-13",
