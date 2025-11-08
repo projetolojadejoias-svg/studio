@@ -18,10 +18,10 @@ export type Product = {
 export const products: Product[] = [
   {
     id: '1',
-    name: 'Corrente com Pingente Emblema Real',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '189,99',
-    originalPrice: '210,00',
+    name: 'Corrente tijolinho',
+    description: '3mm',
+    price: '89,99',
+    originalPrice: '110,00',
     image: 'prod-1',
     images: ['prod-1'],
     sizes: ['70 cm'],
@@ -29,7 +29,7 @@ export const products: Product[] = [
     tags: [
       { text: '3 restantes', variant: 'destructive' },
     ],
-    discount: 10,
+    discount: 19,
   },
   {
     id: '2',
@@ -61,30 +61,15 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    name: 'Corrente com Estrela de Davi',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '179,99',
-    originalPrice: '199,99',
+    name: 'Corrente tijolinho',
+    description: '3mm',
+    price: '109,99',
+    originalPrice: '130,00',
     image: 'prod-4',
     images: ['prod-4'],
     sizes: ['70 cm'],
     stock: false,
     tags: [],
-    discount: 10,
-  },
-  {
-    id: '5',
-    name: 'Corrente com Pingente Medalhão',
-    description: 'Banhada a Ouro 18k • Correntes • Estado: 10/10',
-    price: '199,99',
-    originalPrice: '235,28',
-    image: 'prod-5',
-    images: ['prod-5'],
-    sizes: ['70 cm'],
-    stock: true,
-    tags: [
-      { text: '2 restantes', variant: 'destructive' },
-    ],
     discount: 15,
   },
   {
@@ -140,7 +125,7 @@ export const products: Product[] = [
     sizes: ['70 cm'],
     stock: true,
     tags: [],
-    discount: 14,
+    discount: 50,
   },
   {
     id: '14',
@@ -153,7 +138,7 @@ export const products: Product[] = [
     sizes: ['70 cm'],
     stock: true,
     tags: [],
-    discount: 17,
+    discount: 50,
   },
   {
     id: '15',
@@ -166,7 +151,7 @@ export const products: Product[] = [
     sizes: ['70 cm'],
     stock: true,
     tags: [{ text: 'Novo', variant: 'success' }],
-    discount: 16,
+    discount: 56,
   },
   {
     id: '16',
@@ -179,7 +164,7 @@ export const products: Product[] = [
     sizes: ['70 cm'],
     stock: true,
     tags: [],
-    discount: 14,
+    discount: 57,
   },
   {
     id: '17',

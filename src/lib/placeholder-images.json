@@ -9,14 +9,14 @@
     {
       "id": "mascot",
       "description": "Russo Store mascot",
-      "imageUrl": "https://images.unsplash.com/photo-1725918319127-fc4b1eeeba54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNjb3QlMjBqZXdlbHJ5fGVufDB8fHx8MTc2MTUyODk4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1725918319127-fc4b1eeeba54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNjb3QlMjBqZXdlbHJ5fGVufDB8fHx8MTc2MTUyODk4OHww&ixlib R=4.1.0&q=80&w=1080",
       "imageHint": "mascot jewelry"
     },
     {
       "id": "prod-1",
-      "description": "Corrente com Pingente Emblema Real",
-      "imageUrl": "https://i.imgur.com/jPGxLcg.png",
-      "imageHint": "royal emblem necklace"
+      "description": "Corrente tijolinho",
+      "imageUrl": "https://i.imgur.com/EyPMtdZ.jpeg",
+      "imageHint": "brick chain necklace"
     },
     {
       "id": "prod-2",
@@ -32,15 +32,9 @@
     },
     {
       "id": "prod-4",
-      "description": "Corrente com Estrela de Davi",
-      "imageUrl": "https://i.imgur.com/J6b5Hj8.png",
-      "imageHint": "star david necklace"
-    },
-    {
-      "id": "prod-5",
-      "description": "Corrente com Pingente Medalhão",
-      "imageUrl": "https://i.imgur.com/1Rfu2B5.png",
-      "imageHint": "medallion pendant necklace"
+      "description": "Corrente tijolinho",
+      "imageUrl": "https://i.imgur.com/4Uso4WQ.jpeg",
+      "imageHint": "brick chain necklace"
     },
     {
       "id": "prod-7",
@@ -62,25 +56,25 @@
     },
     {
       "id": "prod-13",
-      "description": "Corrente Cruz Detalhada",
+      "description": "Corrente cadeado",
       "imageUrl": "https://i.imgur.com/3ioNR7I.jpeg",
-      "imageHint": "detailed cross necklace"
+      "imageHint": "padlock chain necklace"
     },
     {
       "id": "prod-14",
-      "description": "Corrente Medalhão Sol",
+      "description": "Corrente tijolinho",
       "imageUrl": "https://i.imgur.com/nhFMWSE.jpeg",
-      "imageHint": "sun medallion necklace"
+      "imageHint": "brick chain necklace"
     },
     {
       "id": "prod-15",
-      "description": "Corrente Cruz Templária",
+      "description": "Corrente piastrine",
       "imageUrl": "https://i.imgur.com/p7uYqUS.jpeg",
-      "imageHint": "templar cross necklace"
+      "imageHint": "piastrine chain necklace"
     },
     {
       "id": "prod-16",
-      "description": "Corrente Nórdica",
+      "description": "Corrente tijolinho",
       "imageUrl": "https://i.imgur.com/arnTa0L.jpeg",
       "imageHint": "nordic pendant necklace"
     },
