@@ -61,8 +61,8 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    name: 'Corrente tijolinho',
-    description: '3mm',
+    name: 'Pulseira Tijolinho',
+    description: '4mm',
     price: '109,99',
     originalPrice: '130,00',
     image: 'prod-4',
