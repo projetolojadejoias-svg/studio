@@ -197,3 +197,28 @@
     width: 100%;
   }
 }
+
+/* Category Title */
+.category-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin: 70px 0 35px 0;
+  padding: 0;
+  grid-column: 1 / -1;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .category-title {
+    font-size: 24px;
+    margin: 60px 0 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-title {
+    font-size: 21px;
+    margin: 45px 0 25px 0;
+  }
+}
